@@ -30,7 +30,7 @@ let sconto3
 /*esecuzione logica if else*/
 if (codiciPromo.includes(userCodicePromo) === true) {
 
-    /* inserire il tipo sconto nella variabili sconto poi semore con if else inserire il valore di risultato a seconda del valore del lavoro scelto (option) */
+    /* inserire il tipo sconto nella variabili sconto poi sempore con if else inserire il valore di "risultato" a seconda del "tipoLavoro" scelto(option) */
 }
 
 
