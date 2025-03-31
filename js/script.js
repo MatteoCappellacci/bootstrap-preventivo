@@ -30,7 +30,8 @@ let sconto3 = 0;
 /*esecuzione logica if else*/
 if (codiciPromoArr.includes(codicePromo) === true) {
 
-    /* inserire il tipo sconto nella variabili sconto poi sempore con if else inserire il valore di "risultato" a seconda del "tipoLavoro" scelto(option) */
+    /* inserire il valore dello sconto nella variabili sconto poi sempre con if else inserire il valore di "risultato" a seconda del "tipoLavoro" scelto(option) */
+
     sconto1 = (sviluppoBackend / 100) * 25;
     sconto2 = (sviluppoFrontend / 100 ) * 25;
     sconto3 = (analisiProgettuale / 100) * 25
@@ -48,16 +49,12 @@ if ( tipoLavoro === "Back-Dev") {
     else {
     alert ("Errore: Seleziona tipo di lavoro!")
     }
+
+    /* Output*/
     /*prezzoFinale.innerText = risultato*/
     /*output*/
-    const rislutatoFormattato = risultato.toFixed(2).replace(".",",");
-    const index = rislutatoFormattato.indexOf(",")
 
-    const risultato1 = rislutatoFormattato.slice(0,index);
-    const risultato2 = rislutatoFormattato.slice(index)
     
-    prezzoFinale.innerHTML =  `€ ${risultato1}<span class="text-secondary fw-normal fs-3">${risultato2}</span>` 
-
     prezzoFinale.innerText = `€ ${risultato.toFixed(2).replace(".", ",")}`
 
 }
