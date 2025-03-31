@@ -19,6 +19,9 @@ const codicePromo = userCodicePromo.value;
 const sviluppoBackend = 20.50 * 10;
 const sviluppoFrontend = 15.30 * 10;
 const analisiProgettuale = 33.60 * 10;
+
+/* MANCANTE il sito deve informare l’utente che il codice non è valido e il prezzo finale viene calcolato senza applicare sconti.
+ */
 const codiciPromoArr = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"
 ];
 
@@ -52,7 +55,9 @@ if ( tipoLavoro === "Back-Dev") {
 
     /* Output*/
     /*prezzoFinale.innerText = risultato*/
-    /*output*/
+
+
+    
 
     
     prezzoFinale.innerText = `€ ${risultato.toFixed(2).replace(".", ",")}`
@@ -65,4 +70,4 @@ if ( tipoLavoro === "Back-Dev") {
 
 
 
-/*output*/
+/*bonus??*/
